@@ -8,6 +8,10 @@ on:
       - edited
       - synchronize
 
+permissions:
+  pull-requests: write
+  statuses: write
+
 jobs:
   pr-title:
     uses: MyDecisive/changelogs/.github/workflows/reusable-semantic-pr-title.yaml@main
